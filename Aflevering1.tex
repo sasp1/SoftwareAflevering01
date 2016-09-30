@@ -12,10 +12,25 @@
 \maketitle
 
 \section{Introduktion}
-\begin{document}
 
-\end{document}
+Boblesortering (\emph{eng. bubble sort}) er en populær \emph{sorteringsalgoritme} og er en af de simpleste algoritmer at forstå og implementere. Dog er den ikke en særlig effektiv sorteringsalgoritme\footnote{Mere om dette i "Algoritmer og Datastrukturer 1"} ; hverken for store eller små lister, og den anvendes sjældent i praksis. Boblesortering sorterer, som navnet antyder, elementerne i en liste ved at \emph{boble} hvert element gennem listen til sin rette plads i listen.
+
 \subsection{Pseudokode}
+Wikipedia \cite{Wikipedia} giver følgende pseudokode for boblesortering.
+\begin{verbatim}
+proceture bubbleSort( A : list of sortable items ) defines as :
+  do 
+    swapped := false
+    for each i in 0 to length(A) - 2 inclusive do:
+      if A[i] > A[i+1] then
+        swap( A[i], A[i+1] )
+        swapped := true
+      end if
+    end for
+  while swapped
+end procedure
+\end{verbatim}
+En illustration af en kørsel af boblesortering fra Wikipedia kan ses på figur 1.
 \section{Analyse af boblesortering}
 \section{Videre læsning}
 \end{document}
